@@ -1,0 +1,70 @@
+/* Screen resolution: iPhone (320px x 480px), iPhone4 (640px x 960px), iPhone5 (640px x 1136px) */
+@media screen and (max-device-width: 3000px) {
+	body {
+		/*position: relative;*/
+		background-color: lightsteelblue;
+	}
+	
+	#main {
+		margin-top: 6px;
+	}
+
+	#buttonrow {
+		position: relative;
+		width: 180px;
+		margin: 6px 50%;
+		/*background-color: red;*/
+		left: -90px;
+	}
+
+	button {
+		display: inline-block;
+		width: 180px;
+	}
+
+	button+button {
+		margin-left: 20px;
+	}
+
+	table {
+		margin: 0px auto;
+		border-collapse: collapse;
+	}
+
+	td.cell {
+		width: 64px;
+		height: 64px;
+		background: white;
+		text-align: center;
+		font-size: 2em;
+		border: 4px solid steelblue;
+	}
+
+	sub {
+		font-size: 0.5em;
+		color: black;
+	}
+
+	sup {
+		position: relative;
+		top: -0.2em;
+		color: steelblue;
+	}
+
+	td#Ø {
+		color: transparent;
+	}
+}
+
+/* iPhone device Nexus standard, see http://www.quirksmode.org/blog/archives/2010/04/a_pixel_is_not.html */
+@media screen and (max-device-width: 320px) {
+	body {
+		background-color: lime;
+	}
+
+	td.cell {
+		padding: 2px;
+		width: auto;
+		height: auto;
+	}
+}
